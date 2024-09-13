@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>STUDENT REGISTRATION SYSTEM</h2>
+
+    </div>
+    <div class="box1">
+        <div class="box2">
+            <button id="add-btn"><i class="fa fa-plus"></i>Add Student</button>
+            <button><i class="fa fa-eraser"></i>Clear Filtering</button>
+        </div>
+        <div class="box3">
+            <i class="fa fa-search"></i>
+            <input type="text" id="studentId" placeholder="Enter Student Id">
+            <button>Search</button>
+        </div>
+
+    </div>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>SR No</th>
+                <th>STUDENT NAME</th>
+                <th>STUDENT ID</th>
+                <th>CONTACT NO</th>
+                <th>SUBJECT</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+            <tbody id="table-data">
+
+            </tbody>
+        </table>
+    </div>
+    <form id="registration-form">
+        <div class="model">
+            <i class="fa fa-times-circle close-icon"></i>
+            <div class="box5">
+                <label for="name"> Student Name</label>
+                <input type="text" required id="name">
+            </div>
+            <div class="box5">
+                <label for="Id"> Student Id</label>
+                <input type="text" required id="id">
+            </div>
+            <div class="box5">
+                <label for="contact">Contact No</label>
+                <input type="text" required id="contact">
+            </div>
+            <div class="box5">
+                <label for="subject"> Subject</label>
+                <input type="text" required id="subject">
+            </div>
+            <div class="box5">
+                <label for="email"> Email</label>
+                <input type="text" required id="email">
+            </div>
+            <div class="box5">
+                <button id="register-btn">Register</button>
+                <button id="update-btn">Update</button>
+
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
