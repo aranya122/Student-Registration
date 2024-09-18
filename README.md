@@ -1,7 +1,6 @@
 
 # Project Title
 
-markdown
 # Student Registration System
 
 A simple web-based student registration system created using HTML, CSS, and JavaScript. This system allows users to register students by entering their details and view the list of registered students.
